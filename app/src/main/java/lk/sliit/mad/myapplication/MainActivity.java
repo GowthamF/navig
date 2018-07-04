@@ -30,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.GREEN);
+        paint.setColor(Color.BLACK);
         Path p = new Path();
-        p.moveTo(20, 20);
-        p.lineTo(100, 200);
+        p.moveTo(100, 100);
+        ;
+        p.lineTo(100, 100);
         p.lineTo(200, 100);
-        p.lineTo(240, 155);
-        p.lineTo(250, 175);
-        p.lineTo(20, 20);
+
+
         canvas.drawPath(p, paint);
 
     }
