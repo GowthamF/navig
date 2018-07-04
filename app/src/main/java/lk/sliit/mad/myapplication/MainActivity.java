@@ -33,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(10);
         Path p = new Path();
-        p.moveTo(700,800);
-        p.lineTo(700,800);
-        p.lineTo(100,800);
+        p.moveTo(700,900);
+        p.lineTo(-200,900);
+        p.offset(100,250);
+
 
 
         canvas.drawPath(p, paint);
