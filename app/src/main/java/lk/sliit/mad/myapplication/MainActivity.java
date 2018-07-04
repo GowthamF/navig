@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        path();
+
+    }
+
+    public void path()
+    {
         drawingImageView = (ImageView) this.findViewById(R.id.DrawingImageView);
         Bitmap bitmap = Bitmap.createBitmap((int) getWindowManager()
                 .getDefaultDisplay().getWidth(), (int) getWindowManager()
@@ -37,14 +43,7 @@ public class MainActivity extends AppCompatActivity {
         p.lineTo(100,1100);
         p.moveTo(100,1100);
         p.lineTo(100,500);
-
-
-
-
-
         canvas.drawPath(p, paint);
-
     }
-
 
 }
