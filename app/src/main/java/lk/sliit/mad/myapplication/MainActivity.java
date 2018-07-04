@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(Color.BLACK);
+        paint.setStrokeWidth(10);
         Path p = new Path();
         p.moveTo(700,800);
         p.lineTo(700,800);
