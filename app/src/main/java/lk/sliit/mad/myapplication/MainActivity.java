@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        lifttoauditorium();
+        //lifttoauditorium();
         lifttolibrary();
 
 
@@ -75,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
         p.moveTo(300,730);
         p.lineTo(300,820);
+        p.moveTo(300,730);
+        p.lineTo(190,730);
         canvas.drawPath(p, paint);
     }
 
