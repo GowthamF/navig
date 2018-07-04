@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         //lifttoauditorium();
         //lifttolibrary();
-        lifttomscroom();
+        //lifttomscroom();
+       // lifttomultimedia();
+        lifttohallone();
 
 
 
@@ -106,6 +108,63 @@ public class MainActivity extends AppCompatActivity {
         p.lineTo(300,730);
         p.moveTo(300,730);
         p.lineTo(300,820);
+
+        canvas.drawPath(p, paint);
+    }
+
+    public void lifttomultimedia()
+    {
+        drawingImageView = (ImageView) this.findViewById(R.id.DrawingImageView);
+        Bitmap bitmap = Bitmap.createBitmap((int) getWindowManager()
+                .getDefaultDisplay().getWidth(), (int) getWindowManager()
+                .getDefaultDisplay().getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        drawingImageView.setImageBitmap(bitmap);
+
+        // Path
+
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        // paint.setColor(Color.BLACK);
+        paint.setShader(new LinearGradient(0, 0, 5,5, Color.BLUE, Color.WHITE, Shader.TileMode.REPEAT));
+        paint.setStrokeWidth(5);
+        Path p = new Path();
+        p.moveTo(220,330);
+        p.lineTo(220,730);
+        p.moveTo(220,730);
+        p.lineTo(300,730);
+        p.moveTo(300,730);
+        p.lineTo(300,820);
+        p.moveTo(220,330);
+        p.lineTo(190,330);
+        canvas.drawPath(p, paint);
+    }
+
+    public void lifttohallone()
+    {
+        drawingImageView = (ImageView) this.findViewById(R.id.DrawingImageView);
+        Bitmap bitmap = Bitmap.createBitmap((int) getWindowManager()
+                .getDefaultDisplay().getWidth(), (int) getWindowManager()
+                .getDefaultDisplay().getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        drawingImageView.setImageBitmap(bitmap);
+
+        // Path
+
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.STROKE);
+        // paint.setColor(Color.BLACK);
+        paint.setShader(new LinearGradient(0, 0, 5,5, Color.BLUE, Color.WHITE, Shader.TileMode.REPEAT));
+        paint.setStrokeWidth(5);
+        Path p = new Path();
+        p.moveTo(220,520);
+        p.lineTo(220,730);
+        p.moveTo(220,730);
+        p.lineTo(300,730);
+        p.moveTo(300,730);
+        p.lineTo(300,820);
+        p.moveTo(220,520);
+        p.lineTo(240,520);
 
         canvas.drawPath(p, paint);
     }
