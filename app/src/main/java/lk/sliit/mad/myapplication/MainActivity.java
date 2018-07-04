@@ -3,8 +3,10 @@ package lk.sliit.mad.myapplication;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Shader;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -36,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.BLACK);
+       // paint.setColor(Color.BLACK);
+        paint.setShader(new LinearGradient(0, 0, 0,5, Color.BLUE, Color.WHITE, Shader.TileMode.REPEAT));
         paint.setStrokeWidth(10);
         Path p = new Path();
         p.moveTo(800,1100);
